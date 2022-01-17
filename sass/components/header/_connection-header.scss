@@ -1,0 +1,38 @@
+.container-contacts {
+    display: none;
+}
+
+.connection-list {
+
+
+    .connection-list__icon-mail,
+    .connection-list__icon-phone {
+        transition: fill var(--time-transition) var(--cubic);
+    }
+
+    .connection-list__link {
+        color: inherit;
+        font-weight: 500;
+        line-height: 1.143;
+        letter-spacing: 0.02em;
+        transition: color var(--time-transition) var(--cubic);
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+
+        &:hover .connection-list__icon-mail,
+        &:focus .connection-list__icon-mail,
+        &:hover .connection-list__icon-phone,
+        &:focus .connection-list__icon-phone {
+            fill: var(--accent-color);
+        }
+    
+    }
+      
+}
+
+
+
+

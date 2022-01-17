@@ -1,0 +1,47 @@
+.invitation {
+    text-align: center;
+    margin-bottom: 60px;
+
+    .invitation__title {
+        margin-bottom: 20px;
+        font-size: 14px;
+        letter-spacing: 0.03em;
+        font-weight: 700;
+        line-height: 1.14;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+
+    .social-list__item {
+        display: flex;
+        width: 44px;
+        height: 44px;
+
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
+
+    .social-list__link {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.1);
+        fill: #ffffff;
+        transition: background-color var(--time-transition) var(--cubic);
+
+        &:hover,
+        &:focus {
+            background-color: var(--accent-color);
+        }
+    }
+}
