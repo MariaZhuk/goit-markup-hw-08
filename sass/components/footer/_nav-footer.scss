@@ -1,5 +1,10 @@
 .nav-footer {
-    background-color: var(--secondary-bg-color);
+    
+    @media screen and (max-width: 480px) {
+        width: 480px;
+        background-color: var(--secondary-bg-color);
+    }
+    
         
     }
 

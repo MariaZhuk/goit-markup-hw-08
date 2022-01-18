@@ -1,19 +1,26 @@
 .container-contacts {
-    display: none;
+    display: block;
+    margin-bottom: 64px;
 }
 
 .connection-list {
 
+    &__item:not(:last-child) {
+        margin-bottom: 32px;
+    }
+
 
     .connection-list__icon-mail,
     .connection-list__icon-phone {
+        display: none;
         transition: fill var(--time-transition) var(--cubic);
     }
 
     .connection-list__link {
-        color: inherit;
+        color: var(--secondary-text-color);
         font-weight: 500;
-        line-height: 1.143;
+        font-size: 34px;
+        line-height: 1.176;
         letter-spacing: 0.02em;
         transition: color var(--time-transition) var(--cubic);
 

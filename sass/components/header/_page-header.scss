@@ -1,6 +1,14 @@
 .header {
+  
   position: relative;
   border-bottom: 1px solid #ECECEC;
+
+  @media screen and (max-width: 480px) {
+    width: 480px;
+    
+  }
+
+  
 
   .nav {
     display: flex;
@@ -9,7 +17,7 @@
     min-height: 60px;
   }
 
-}
+
 
 .menu-button {
   display: inline-flex;
@@ -17,20 +25,33 @@
   padding: 0;
   margin: 0;
   background-color: transparent;
+  z-index: 3;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+    
+  }
 }
 
 .menu-container {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: turquoise;
 
-  &.is-open {
-    display: block;
+  @media screen and (max-width: 767px) {
+     display: none;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 796px;
+     padding: 48px 48px 48px 40px;
+     background-color: var(--primery-bg-color);
+     z-index: 2;
+
+    &.is-open {
+      display: block;
+    }
+    
   }
+ 
 }
 
 .menu-button .icon-cross {
@@ -43,4 +64,6 @@
 
 .menu-button.is-open .icon-menu {
   display: none;
+  }
+
 }

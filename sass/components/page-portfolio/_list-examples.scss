@@ -1,11 +1,15 @@
-.examples-list {
-    justify-content: center;
-    padding-top: 94px;
-    padding-bottom: 50px;
+.examples-work {
+    margin: -8px;
+}
 
-    .examples-list__item:not(:first-child) {
-        margin-left: 8px;
-    }
+.examples-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    
+    .examples-list__item {
+        margin: 8px;
+    } 
 
     .examples-list__button {
         color: var(--primery-text-color);

@@ -1,20 +1,11 @@
 
 
 .works {
-    flex-wrap: wrap;
-    padding-bottom: 94px;
 
     .works__item {
         box-sizing: border-box;
-    }
-
-    .works__item:not(:nth-child(3n)) {
-        background-color: var(--bg-card-portfolio);
-        margin-right: 30px;
-    }
-
-    .works__item:not(:nth-last-child(-n+3)) {
         margin-bottom: 30px;
+
     }
 
     .works__link {
@@ -35,10 +26,9 @@
 .card-thumb {
     position: relative;
     overflow: hidden;
-
+    
     .card-thumb__img {
         display: block;
-        max-width: 370px;
     }
 
     .card-thumb__overlay {
