@@ -1,7 +1,9 @@
 .invitation {
     text-align: center;
-    margin-bottom: 60px;
-
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 60px;
+    }
+    
     .invitation__title {
         margin-bottom: 20px;
         font-size: 14px;

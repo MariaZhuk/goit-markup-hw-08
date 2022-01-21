@@ -1,4 +1,11 @@
 .instruments  {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+        
+        
+    }
 
     .icon-container {
         text-align: center;
@@ -12,7 +19,6 @@
         margin-bottom: 10px;
         font-weight: bold;
         line-height: 1.142;
-        text-align: center;
         text-transform: uppercase;
     }
 
@@ -28,6 +34,17 @@
 
         &:last-child {
             padding-bottom: 0;
+        }
+
+        @media screen and (min-width: 768px){
+            margin: 15px;
+            width: calc((100% - 4 * 15px) / 2);
+
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: calc((100% - 8 * 15px) / 4);
+            
         }
     }
      

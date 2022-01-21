@@ -1,21 +1,48 @@
-.container-contacts {
-    display: block;
-    margin-bottom: 64px;
-}
+
 
 .connection-list {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 64px;
 
-    &__item:not(:last-child) {
-        margin-bottom: 32px;
+        &__item:not(:last-child) {
+            margin-bottom: 32px;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+    @media screen and (min-width: 1200px) {
+        flex-direction: row-reverse;
+        align-items: center;
+
+        
     }
 
+   
+    .connection-list__item {
+        @media screen and (min-width: 768px) {
+            display: flex;
+        }
+    
+        &:not(:first-child) {
+            @media screen and (min-width: 768px) {
+                 margin-bottom: 10px;
+            }
+            @media screen and (min-width: 1200px) {
+                margin-bottom: 0;
+                 
+            }
+           
+        }
+        &:not(:last-child) {
+            @media screen and (min-width: 1200px) {
+                margin-left: 30px;
+            }
+        }
 
-    .connection-list__icon-mail,
-    .connection-list__icon-phone {
-        display: none;
-        transition: fill var(--time-transition) var(--cubic);
     }
-
     .connection-list__link {
         color: var(--secondary-text-color);
         font-weight: 500;
@@ -23,6 +50,13 @@
         line-height: 1.176;
         letter-spacing: 0.02em;
         transition: color var(--time-transition) var(--cubic);
+
+        @media screen and (min-width: 768px) {
+            display: inline-flex;
+            font-size: 12px;
+            line-height: 1.166;
+
+        }
 
         &:hover,
         &:focus {
@@ -35,8 +69,24 @@
         &:focus .connection-list__icon-phone {
             fill: var(--accent-color);
         }
-    
+
     }
+
+    
+    .connection-list__icon-mail,
+    .connection-list__icon-phone {
+        display: none;
+        transition: fill var(--time-transition) var(--cubic);
+
+        @media screen and (min-width: 768px) {
+            display: block;
+            margin-right: 8px;
+            fill: var(--secondary-text-color);
+            
+        }
+    }
+
+    
       
 }
 

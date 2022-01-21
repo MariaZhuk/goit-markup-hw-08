@@ -12,9 +12,10 @@
     padding-right: 15px;
     padding-left: 15px;
     margin: 0 auto;
+    width: 100%;
 
-    @media screen and (max-width: 480px) {
-        width: 480px;  
+    @media screen and (max-width: 767px) {
+       width: 480px;  
     }
 
     @media screen and (min-width: 768px) {
@@ -51,10 +52,21 @@ ul {
 
 .section {
     padding: 60px 0;
+
+    @media screen and (min-width: 1200px) {
+        padding: 94px 0;
+        
+    }
 }
 
 .instruments,
 .work,
 .example-work {
     background: var(--primery-bg-color);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }

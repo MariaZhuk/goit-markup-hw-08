@@ -12,7 +12,18 @@
     }
 
     .form-container {
-        margin-top: 20px;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @media screen and (min-width: 1200px) {
+            flex-direction: row;
+        
+        }
+
     }
 
     .form__input {
@@ -27,6 +38,19 @@
         letter-spacing: 0.03em;
         background: #2F303A;
         color: rgba(255, 255, 255, 0.6);
+
+        @media screen and (min-width: 768px) {
+            width: 450px; 
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 0;
+            margin-right: 12px;
+            width: 358px;
+            
+        }
+            
+        
     }
 
     .form__submit {
@@ -43,6 +67,11 @@
         border-radius: 4px;
         cursor: pointer;
         color: #FFFFFF;
+
+        @media screen and (min-width: 768px) {
+            display: block;
+            
+        }
     }
 
     .form__icon {
