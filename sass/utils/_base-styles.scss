@@ -5,7 +5,11 @@
     letter-spacing: 0.03em;
     font-size: 14px;
     line-height: 1.714;
-    overflow-x: hidden;
+    
+    @media screen and (min-width: 320px) {
+        overflow-x: hidden;
+    }
+    
 }
 
 .container {

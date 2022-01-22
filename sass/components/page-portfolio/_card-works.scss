@@ -89,11 +89,15 @@
              margin-top: 0;
          }
 }
+.card-thumb__meta--size {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding-bottom: 55px;
+
+    }
+}
 
 .works__link:hover .card-thumb__overlay,
 .works__link:focus .card-thumb__overlay {
     opacity: 1;
     transform: translateY(0);
 }
-
-

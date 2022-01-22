@@ -57,6 +57,10 @@
             line-height: 1.166;
 
         }
+        @media screen and (min-width: 1200px) {
+            font-size: 14px;
+            line-height: 1.142;
+        }
 
         &:hover,
         &:focus {
@@ -83,6 +87,30 @@
             margin-right: 8px;
             fill: var(--secondary-text-color);
             
+        }
+    }
+    .connection-list__icon-mail {
+        @media screen and (min-width: 768px) {
+            width: 14px;
+            height: 10px;
+
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 16px;
+            height: 12px;
+        }
+    }
+    .connection-list__icon-phone {
+        @media screen and (min-width: 768px) {
+            width: 10px;
+            height: 14px;
+
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 10px;
+            height: 16px;
         }
     }
 

@@ -1,7 +1,13 @@
 .invitation {
     text-align: center;
+    
     @media screen and (max-width: 1199px) {
         margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        text-align: start;
+
     }
     
     .invitation__title {

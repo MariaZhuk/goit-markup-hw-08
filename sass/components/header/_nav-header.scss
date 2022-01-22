@@ -9,11 +9,22 @@
              margin-bottom: 32px;
         }
     }
-    .nav-header__list {
-        @media screen and (min-width: 768px) {
-            display: flex;
-        }   
+.nav-header__list {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        margin-right: 84px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-right: 305px;
+    }   
 }   
+
+.nav-header__item:not(:last-child) {
+    @media screen and (min-width: 768px) {
+        margin-right: 50px;
+        
+    }
+}
 
  .nav-header__link {
      color: inherit;
@@ -75,7 +86,7 @@
     letter-spacing: 0.02em;
     color: var(--accent-color);
 
-    &:after {
+    &--delimiter:after {
         content: "";
         position: relative;
         right: -10px;
