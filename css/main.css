@@ -299,12 +299,13 @@ summary {
 .container {
   padding-right: 15px;
   padding-left: 15px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .container {
-    width: 100%;
+    width: 480px;
   }
 }
 
@@ -365,12 +366,6 @@ img {
 .header {
   position: relative;
   border-bottom: 1px solid #ECECEC;
-}
-
-@media screen and (max-width: 480px) {
-  .header {
-    width: 480px;
-  }
 }
 
 .header .nav {
@@ -887,7 +882,7 @@ img {
           border-radius: 4px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .modal {
     position: absolute;
     top: 50%;
@@ -895,11 +890,19 @@ img {
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
+    width: 450px;
+    height: 609px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     width: 528px;
     height: 581px;
   }
@@ -935,10 +938,6 @@ img {
   font-size: 20px;
   line-height: 1.15;
   margin: 0 0 12px 0;
-}
-
-.modal .modal-submit {
-  margin-bottom: 40px;
 }
 
 .modal-container {
@@ -1135,12 +1134,6 @@ img {
 
 .section-team {
   background-color: #f5f4fa;
-}
-
-@media screen and (max-width: 480px) {
-  .section-team {
-    width: 480px;
-  }
 }
 
 .section-team__title {
@@ -1623,12 +1616,6 @@ img {
 
 .nav-footer {
   background-color: var(--secondary-bg-color);
-}
-
-@media screen and (max-width: 480px) {
-  .nav-footer {
-    width: 480px;
-  }
 }
 
 .nav-footer .nav-footer__container {
